@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>郵便局マップ</title>
+</head>
+
+<link type="text/css" th:href="@{/css/postmap.css}" rel="stylesheet" />
+<script th:src="@{/js/postmap.js}"></script>
+
+<body>
+<div>
+	<div id="header">
+		<img src="/img/logo.png" alt="PostMap" />
+		<h2>郵便局をひたすらマッピング</h2>
+	</div>
+  
+	<input type="text" size="55" id="search_word" value="東京駅" onkeypress="search();" />
+	<input type="button" size="55" value="検索" onClick="search()" />
+    
+    <div id="mapwrapper">
+	    <div id="map"></div>
+	    <div id="right-panel">
+			<h2>Results</h2>
+			<ul id="places"></ul>
+	    </div>
+    </div>
+</div>
+
+<script th:src="@{${'https://maps.googleapis.com/maps/api/js?callback=initMap&v=3.55&libraries=places&key=' + apiKey}}" async defer></script>
+
+</body>
+</html>

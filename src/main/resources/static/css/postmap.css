@@ -1,0 +1,80 @@
+#header {
+	display: flex;
+	margin: 10px 20px;
+	height:64px;
+  
+	background-color:#F0F0F0;
+	border-radius: 7px;
+}
+#header img {
+	margin: 10px;
+	padding: 7px;
+}
+#header h2 {
+	margin: 10px;
+	color:#888;
+	white-space:nowrap;
+	align-self: center;
+}
+#search_word{
+	margin: 10px 20px;
+}
+
+#map {
+	margin: 0 20px 10px 20px;
+    height: 570px;
+    width: 63%;
+    float: left;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#right-panel {
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+#right-panel select, #right-panel input {
+    font-size: 15px;
+}
+#right-panel select {
+    width: 100%;
+}
+#right-panel i {
+    font-size: 12px;
+}
+#right-panel {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    float: right;
+    width: 32%;
+    right: 20px;
+    height: 560px;
+    padding: 5px;
+    z-index: 5;
+    border: 1px solid #999;
+    background: #fff;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 85%;
+    overflow-y: scroll;
+}
+li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+#postlist:hover{
+  cursor : pointer;
+  background:#b0c4de;
+}
